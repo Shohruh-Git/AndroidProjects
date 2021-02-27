@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="200dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
     android:layout_marginLeft="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,11 +13,10 @@
         android:layout_height="203dp">
 
         <ImageView
-            android:elevation="500dp"
             android:id="@+id/nike_view"
-            android:layout_width="130dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="4dp"
+            android:layout_width="133dp"
+            android:layout_height="204dp"
+            android:elevation="500dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,4 +68,4 @@
             app:layout_constraintTop_toBottomOf="@+id/gender"
             app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+</androidx.cardview.widget.CardView>

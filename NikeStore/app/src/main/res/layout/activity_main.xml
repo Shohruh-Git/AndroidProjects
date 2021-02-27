@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".HomePage">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewId"
         android:layout_width="0dp"
@@ -22,7 +22,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/segoebold"
-        android:text="Welcome To\nNike Store"
+        android:text="   Welcome To\n   Nike Store"
         android:textColor="#E80C1963"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"

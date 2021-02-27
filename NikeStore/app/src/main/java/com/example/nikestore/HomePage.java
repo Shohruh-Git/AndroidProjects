@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.nikestore.adapter.BestSellerAdapter;
 import com.example.nikestore.adapter.NewReleaseRecyclerAdapter;
@@ -17,7 +18,7 @@ import com.example.nikestore.model.NewRelease;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class HomePage extends AppCompatActivity {
 
     RecyclerView recyclerView;
 
@@ -25,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
     BestSellerAdapter bestSellerAdapter;
     List<NewRelease> newReleaseList;
     List<BestSeller> bestSellerList;
+    TextView name;
     ImageView cart;
+    TextView rating;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this , ProductDetails.class);
+                Intent intent = new Intent(HomePage.this , ProductDetails.class);
             }
         });
     }
