@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ProductDetails">
+
+    <Button
+        android:id="@+id/button33"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#FFFFFF"
+        android:text="33"
+        app:layout_constraintBottom_toBottomOf="@+id/button32"
+        app:layout_constraintStart_toEndOf="@+id/button32"
+        app:layout_constraintTop_toTopOf="@+id/button32" />
+
+    <Button
+        android:id="@+id/button32"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#FFFFFF"
+        android:text="32"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/button31"
+        app:layout_constraintStart_toEndOf="@+id/button31"
+        app:layout_constraintTop_toTopOf="@+id/button31" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_width="247dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="76dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nike_logo"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/like_anim"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/nike_logo"
+        android:layout_width="134dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="clip_horizontal|center"
+        app:layout_constraintStart_toEndOf="@+id/menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_nike_ic"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+
+        android:id="@+id/big_shoe_cart"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/nike_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_like_empty"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+
+        android:id="@+id/big_shoe_like_empty"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/nike_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_like"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/big_shoe_image"
+        android:layout_width="411.5dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nike_logo"
+        app:srcCompat="@drawable/big_shoe" />
+
+    <TextView
+        android:id="@+id/big_shoe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/segoebold"
+        android:text="Nike Air Max"
+        android:textColor="#032373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_shoe_image" />
+
+    <TextView
+        android:id="@+id/big_shoe_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/segoesemibold"
+        android:text="4.5"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/big_shoe_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/big_shoe_name"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <ImageView
+        android:id="@+id/big_shoe_star"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/big_shoe_rating"
+        app:layout_constraintEnd_toStartOf="@+id/big_shoe_rating"
+        app:layout_constraintTop_toTopOf="@+id/big_shoe_rating"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/details_text"
+        android:layout_width="382dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/segoeregular"
+        android:text="Air Max 90 sneakers Get ready to feel as if you're walking on a cloud. These Air Max 90 sneakers from Nike are placed atop their signature Air Max sole for a lightweight feel. Dreamy."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_shoe_image" />
+
+    <TextView
+        android:id="@+id/big_shoe_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/segoebold"
+        android:text="$29"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buy_now_button"
+        android:layout_width="184dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#CD1010"
+        android:text="Add to card"
+        android:textColor="#000000"
+        android:textColorHighlight="#08389A"
+        android:textColorHint="#BA0E0E"
+        android:textColorLink="#C81313"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/big_shoe_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Shoe Size"
+        android:textColor="#042460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_text" />
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#000000"
+        android:text="29"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_shoe_size" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#FFFFFF"
+        android:text="30"
+        app:layout_constraintBottom_toBottomOf="@+id/button29"
+        app:layout_constraintStart_toEndOf="@+id/button29"
+        app:layout_constraintTop_toTopOf="@+id/button29"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#FFFFFF"
+        android:text="31"
+        app:layout_constraintBottom_toBottomOf="@+id/button30"
+        app:layout_constraintStart_toEndOf="@+id/button30"
+        app:layout_constraintTop_toTopOf="@+id/button30" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

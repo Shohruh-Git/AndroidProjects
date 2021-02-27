@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    tools:context = ".ui.NavigationView"
+    >
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/Home"
+            android:title="Home"
+
+            android:icon="@drawable/home"
+            />
+        <item android:id="@+id/purchase" android:title="Purchases" android:icon="@drawable/cart">
+
+        </item>
+        <item android:id="@+id/nav_profile"
+            android:title="Search"
+            android:icon="@drawable/search"/>
+        <item android:id="@+id/nav_chat"
+            android:title="Wishlist"
+            android:icon="@drawable/heart"/>
+        <item android:id="@+id/nav_about_us"
+            android:title="Settings"
+            android:icon="@drawable/settings"/>
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/group_divider">
+            <item android:id="@+id/share" android:title="Share"
+                android:icon="@drawable/share"/>
+            <item android:id="@+id/about_us" android:title="About us"
+                android:icon="@drawable/information"/>
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/logout">
+        <item android:id="@+id/logOut" android:icon="@drawable/logout" android:title="Log out">
+
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ProductDetails">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/like_anim"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <ImageView
+        android:id="@+id/nike_logo"
+        android:layout_width="134dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="clip_horizontal|center"
+        app:layout_constraintStart_toEndOf="@+id/menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_nike_ic"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+
+        android:id="@+id/big_shoe_cart"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/nike_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_like_empty"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+
+        android:id="@+id/big_shoe_like_empty"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/nike_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_like"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/big_shoe_image"
+        android:layout_width="299dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nike_logo"
+        app:srcCompat="@drawable/big_shoe" />
+
+    <TextView
+        android:id="@+id/big_shoe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/segoebold"
+        android:text="Nike Air Max"
+        android:textColor="#032373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_shoe_image"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/big_shoe_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/segoesemibold"
+        android:text="4.5"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/big_shoe_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/big_shoe_name"
+        app:layout_constraintVertical_bias="0.44"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/big_shoe_star"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/big_shoe_rating"
+        app:layout_constraintEnd_toStartOf="@+id/big_shoe_rating"
+        app:layout_constraintTop_toTopOf="@+id/big_shoe_rating"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/details_text"
+        android:layout_width="382dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/segoesemibold"
+        android:text="air_max_90_sneakers_get_ready_to_feel_as_if_you_re_walking_on_a_cloud_these_air_max_90_sneakers_from_nike_are_placed_atop_their_signature_air_max_sole_for_a_lightweight_feel_dreamy"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_shoe_image"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/big_shoe_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/segoebold"
+        android:text="$29"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buy_now_button"
+        android:layout_width="207dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_shape"
+        android:elevation="120dp"
+        android:text="add_to_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="lollipop"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
